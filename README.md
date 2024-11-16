@@ -50,8 +50,8 @@ Certifique-se de ter as bibliotecas abaixo instaladas no seu ambiente Python ant
 ---
 
 ## **4. Modelagem**
-### **Modelo Utilizado**
-Optamos por usar **Regressão Linear**, um modelo estatístico simples e eficaz para prever valores contínuos.
+### **Modelo utilizado**
+Optamos por usar **Regressão linear**, um modelo estatístico simples e eficaz para prever valores contínuos.
 
 ### **Configuração**
 - Dados divididos em treino (80%) e teste (20%).
@@ -73,10 +73,10 @@ Optamos por usar **Regressão Linear**, um modelo estatístico simples e eficaz 
 ### **Distribuição do Life Ladder**
 ![Distribuição do Life Ladder](images/life_ladder_distribution.png)
 
-### **Matriz de Correlação**
+### **Matriz de correlação**
 ![Matriz de Correlação](images/correlation_matrix.png)
 
-### **Valores Reais vs Previsões**
+### **Valores reais vs previsões**
 ![Valores Reais vs Previsões](images/real_vs_predictions.png)
 
 ---
@@ -95,7 +95,7 @@ Este projeto pode ajudar formuladores de políticas a identificar os fatores mai
 
 ---
 
-## **7. Reproduzir o Projeto**
+## **7. Reproduzir o projeto**
 ### **Passos**
 1. Faça o download do dataset no [Kaggle](https://www.kaggle.com/datasets/muskanmaheshwari15/world-happiness-data-2024).
 2. Coloque o arquivo `world-happiness-data-2024.zip` na mesma pasta do arquivo `code.py`.
