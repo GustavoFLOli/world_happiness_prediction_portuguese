@@ -14,8 +14,13 @@ Os dados foram obtidos do [Kaggle - World Happiness Report 2024](https://www.kag
 
 ### **Como obter os dados**
 1. Acesse o link acima no Kaggle.
-2. Clique em **Download** para obter o arquivo `world-happiness-data-2024.zip` (Caso você faça o download como zip, ele virá com o nome "archive.zip", renomeie-o para "world-happiness-data-2024.zip".) ou o arquivo `World Happiness Report 2024.csv` (Neste caso, aparecerá um aviso de que não conseguiu descompactar um arquivo, não se preocupe.).
-3. Coloque o arquivo na mesma pasta onde o código `code.py` está localizado.
+2. Clique em **Download** para obter:
+   - O arquivo `world-happiness-data-2024.zip`:
+     - Caso o arquivo seja baixado como `archive.zip`, renomeie-o para `world-happiness-data-2024.zip`.
+   - Ou diretamente o arquivo `World Happiness Report 2024.csv`:
+     - Neste caso, você verá um aviso no código de que não conseguiu descompactar um arquivo. Não se preocupe, isso não afetará o funcionamento.
+3. Coloque o arquivo (zip ou CSV) na mesma pasta onde o código `code.py` está localizado.
+
 
 ### **Descrição dos dados**
 As principais colunas utilizadas no modelo foram:
@@ -28,13 +33,24 @@ As principais colunas utilizadas no modelo foram:
 - **Perceptions of corruption**: Percepção de corrupção.
 
 ### **Processo**
-1. O dataset foi baixado automaticamente no Google Colab usando a API do Kaggle.
-2. Valores ausentes foram preenchidos com a média para cada coluna numérica.
-3. Variáveis categóricas (como `Country name`) foram excluídas da análise.
+1. Valores ausentes foram preenchidos com a média para cada coluna numérica.
+2. Variáveis categóricas (como `Country name`) foram excluídas da análise.
 
 ---
 
-## **3. Modelagem**
+## **3. Requisitos**
+Certifique-se de ter as bibliotecas abaixo instaladas no seu ambiente Python antes de executar o código:
+- **os** (padrão no Python)
+- **zipfile** (padrão no Python)
+- **pandas**: `pip install pandas`
+- **numpy**: `pip install numpy`
+- **matplotlib**: `pip install matplotlib`
+- **seaborn**: `pip install seaborn`
+- **scikit-learn**: `pip install scikit-learn`
+  
+---
+
+## **4. Modelagem**
 ### **Modelo Utilizado**
 Optamos por usar **Regressão Linear**, um modelo estatístico simples e eficaz para prever valores contínuos.
 
@@ -54,19 +70,19 @@ Optamos por usar **Regressão Linear**, um modelo estatístico simples e eficaz 
 
 ---
 
-## **4. Visualizações**
+## **5. Visualizações**
 ### **Distribuição do Life Ladder**
 ![Distribuição do Life Ladder](images/life_ladder_distribution.png)
 
-### **Matriz de correlação**
+### **Matriz de Correlação**
 ![Matriz de Correlação](images/correlation_matrix.png)
 
-### **Valores reais vs previsões**
+### **Valores Reais vs Previsões**
 ![Valores Reais vs Previsões](images/real_vs_predictions.png)
 
 ---
 
-## **5. Conclusões**
+## **6. Conclusões**
 ### **Insights**
 1. Países com maior PIB per capita, suporte social e expectativa de vida saudável tendem a ter maiores níveis de felicidade.
 2. A percepção de corrupção reduz significativamente a felicidade de um país.
@@ -80,15 +96,22 @@ Este projeto pode ajudar formuladores de políticas a identificar os fatores mai
 
 ---
 
-## **6. Reproduzir o Projeto**
+## **7. Reproduzir o Projeto**
 ### **Passos**
 1. Faça o download do dataset no [Kaggle](https://www.kaggle.com/datasets/muskanmaheshwari15/world-happiness-data-2024).
-2. Certifique-se de colocá-lo na mesma pasta do arquivo `code.py`.
-3. Execute o código `code.py` usando Python e as bibliotecas listadas nos requisitos.
+2. Coloque o arquivo `world-happiness-data-2024.zip` na mesma pasta do arquivo `code.py`.
+3. Descompacte o arquivo e renomeie para `world_happiness_2024.csv`, caso necessário:
+   ```python
+   import zipfile
+   import os
+
+   with zipfile.ZipFile('world-happiness-data-2024.zip', 'r') as zip_ref:
+       zip_ref.extractall(".")
+   os.rename("World Happiness Report 2024.csv", "world_happiness_2024.csv")
 
 ---
 
-## **7. Contato**
+## **8. Contato**
 Criado por Gustavo Francisco Lima de Oliveira.  
 E-mail: g.francisco.tech@gmail.com.
 
