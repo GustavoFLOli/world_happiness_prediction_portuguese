@@ -12,7 +12,7 @@ Prever o score de felicidade (`Life Ladder`) de diferentes países com base em v
 ### **Fonte**
 Os dados foram obtidos diretamente do [Kaggle - World Happiness Report 2024](https://www.kaggle.com/datasets/muskanmaheshwari15/world-happiness-data-2024).
 
-### **Descrição dos Dados**
+### **Descrição dos dados**
 As principais colunas utilizadas no modelo foram:
 - **Life Ladder**: Pontuação de felicidade.
 - **Log GDP per capita**: PIB per capita (logarítmico).
@@ -53,10 +53,10 @@ Optamos por usar **Regressão Linear**, um modelo estatístico simples e eficaz 
 ### **Distribuição do Life Ladder**
 ![Distribuição do Life Ladder](images/life_ladder_distribution.png)
 
-### **Matriz de Correlação**
+### **Matriz de correlação**
 ![Matriz de Correlação](images/correlation_matrix.png)
 
-### **Valores Reais vs Previsões**
+### **Valores reais vs previsões**
 ![Valores Reais vs Previsões](images/real_vs_predictions.png)
 
 ---
