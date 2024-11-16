@@ -10,7 +10,12 @@ Prever o score de felicidade (`Life Ladder`) de diferentes países com base em v
 
 ## **2. Coleta de dados**
 ### **Fonte**
-Os dados foram obtidos diretamente do [Kaggle - World Happiness Report 2024](https://www.kaggle.com/datasets/muskanmaheshwari15/world-happiness-data-2024).
+Os dados foram obtidos do [Kaggle - World Happiness Report 2024](https://www.kaggle.com/datasets/muskanmaheshwari15/world-happiness-data-2024).
+
+### **Como obter os dados**
+1. Acesse o link acima no Kaggle.
+2. Clique em **Download** para obter o arquivo `world-happiness-data-2024.zip` (Caso você faça o download como zip, ele virá com o nome "archive.zip", renomeie-o para "world-happiness-data-2024.zip".) ou o arquivo `World Happiness Report 2024.csv` (Neste caso, aparecerá um aviso de que não conseguiu descompactar um arquivo, não se preocupe.).
+3. Coloque o arquivo na mesma pasta onde o código `code.py` está localizado.
 
 ### **Descrição dos dados**
 As principais colunas utilizadas no modelo foram:
@@ -77,9 +82,9 @@ Este projeto pode ajudar formuladores de políticas a identificar os fatores mai
 
 ## **6. Reproduzir o Projeto**
 ### **Passos**
-1. Configure o ambiente no Google Colab.
-2. Baixe o dataset automaticamente usando a API do Kaggle.
-3. Execute o código fornecido no arquivo `code.ipynb` usando Python e bibliotecas como Pandas, Scikit-learn, Matplotlib e Seaborn.
+1. Faça o download do dataset no [Kaggle](https://www.kaggle.com/datasets/muskanmaheshwari15/world-happiness-data-2024).
+2. Certifique-se de colocá-lo na mesma pasta do arquivo `code.py`.
+3. Execute o código `code.py` usando Python e as bibliotecas listadas nos requisitos.
 
 ---
 
