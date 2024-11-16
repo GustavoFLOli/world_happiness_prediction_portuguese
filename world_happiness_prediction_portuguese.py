@@ -24,7 +24,10 @@ with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
     zip_ref.extractall(".")
 
 # Renomeando o arquivo descompactado para o nome correto.
-os.rename("World Happiness Report 2024.csv", "world_happiness_2024.csv")
+if not os.path.exists("world_happiness_2024.csv"):
+    os.rename("World Happiness Report 2024.csv", "world_happiness_2024.csv")
+else:
+    print("O arquivo 'world_happiness_2024.csv' já existe. Renomeação ignorada.")
 
 # Carregando e visualizando os dados
 
