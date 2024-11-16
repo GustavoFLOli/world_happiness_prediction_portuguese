@@ -43,7 +43,6 @@ Certifique-se de ter as bibliotecas abaixo instaladas no seu ambiente Python ant
 - **os** (padrão no Python)
 - **zipfile** (padrão no Python)
 - **pandas**: `pip install pandas`
-- **numpy**: `pip install numpy`
 - **matplotlib**: `pip install matplotlib`
 - **seaborn**: `pip install seaborn`
 - **scikit-learn**: `pip install scikit-learn`
