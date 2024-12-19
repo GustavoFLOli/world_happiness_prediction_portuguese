@@ -112,7 +112,7 @@ Este projeto pode ajudar formuladores de políticas a identificar os fatores mai
 
 ## **8. Contato**
 Criado por Gustavo Francisco Lima de Oliveira.  
-E-mail: g.francisco.tech@gmail.com.
+E-mail: gustavo.f.lima.oliveira@gmail.com
 
 ---
 
